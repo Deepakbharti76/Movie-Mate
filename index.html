@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Mate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h2>🎬 Movie Mate</h2>
+      <div id="searchBar">
+        <input type="text" id="searchInput" placeholder="🔍 Search movie..." />
+        <button onclick="searchMovie()">Search</button>
+        <button onclick="resetSearch()">Reset</button>
+      </div>
+      <ul id="movieList"></ul>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal">
+      <div id="modalContent">
+        <img id="modalImage" src="" alt="" />
+        <h3 id="modalTitle"></h3>
+        <span id="modalYear"></span>
+        <span id="modalGenre"></span>
+        <p id="modalDesc"></p>
+        <a id="modalTrailer" href="" target="_blank">
+          <button id="trailerBtn">Watch Trailer</button>
+        </a>
+        <br />
+        <button id="closeModal" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
